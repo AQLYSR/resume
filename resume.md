@@ -18,8 +18,7 @@ Technology driven physics undergraduate with hands-on experience in circuit desi
 **UNIVERSITI SAINS MALAYSIA (USM)** — 2023 - 2027
 Bachelor of Science (Physics) with Honours
 - CGPA: 3.69
-- Final Year Project: OTDR-Based D-Shaped Optical Fiber Temperature Sensor
-- Wakalah Paynet-Yayasan Khazanah Scholarship, 2023
+- Wakalah Paynet-Yayasan Khazanah Scholarship
 
 **UNIVERSITI TEKNOLOGI MARA (UITM)** — 2022 - 2023
 Foundation in Science
