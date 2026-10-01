@@ -1,50 +1,64 @@
 @page {
   size: A4;
-  margin: 14mm 16mm;
+  margin: 6mm 12mm;
 }
 
 body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   font-size: 10pt;
-  line-height: 1.4;
+  line-height: 1.18;
   color: #222;
+  margin: 0;
+  text-align: justify;
 }
 
 h1 {
-  font-size: 22pt;
+  font-size: 15pt;
   letter-spacing: 2px;
-  margin: 0 0 4px;
+  margin: 0 0 10px;
   text-align: center;
 }
 
 /* contact block under the name */
 h1 + p {
   text-align: center;
-  font-size: 9pt;
+  font-size: 8pt;
   color: #555;
-  margin-top: 0;
+  margin: 0;
+  line-height: 1.15;
 }
 
 h2 {
-  font-size: 11pt;
+  font-size: 9.5pt;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-bottom: 1.5px solid #222;
-  padding-bottom: 2px;
-  margin: 14px 0 6px;
+  border-bottom: 1px solid #222;
+  padding-bottom: 1px;
+  margin: 5px 0 2px;
+}
+
+p {
+  margin: 0 0 1px;
 }
 
 ul {
-  margin: 2px 0 8px;
-  padding-left: 18px;
+  margin: 0 0 10px;
+  padding-left: 14px;
 }
 
-li { margin-bottom: 2px; }
+li { margin-bottom:0; }
 
 a { color: #1a4d8f; text-decoration: none; }
 
 /* the --- rules are redundant once h2 has an underline */
 hr { display: none; }
+
+/* right-aligned dates on institution / role lines */
+.date {
+  float: right;
+  font-weight: normal;
+  color: #555;
+}
 
 /* keep headings with their content */
 h2, h3 { page-break-after: avoid; }
