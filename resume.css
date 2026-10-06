@@ -5,17 +5,17 @@
 
 body {
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
-  font-size: 10pt;
-  line-height: 1.18;
+  font-size: 9pt;
+  line-height: 1.13;
   color: #222;
   margin: 0;
-  text-align: justify;
+  text-align: left;
 }
 
 h1 {
   font-size: 15pt;
   letter-spacing: 2px;
-  margin: 0 0 10px;
+  margin: 5px;
   text-align: center;
 }
 
@@ -36,13 +36,23 @@ h2 {
   padding-bottom: 1px;
   margin: 5px 0 2px;
 }
+h3 {
+    font-size: 9pt;
+    text-align: left;
+}
 
 p {
   margin: 0 0 1px;
 }
 
+/* descriptive prose stays justified; short/non-descriptive lines are left-aligned */
+h2#professional-summary + p,
+li {
+  text-align: justify;
+}
+
 ul {
-  margin: 0 0 10px;
+  margin: 0 0 6px;
   padding-left: 14px;
 }
 

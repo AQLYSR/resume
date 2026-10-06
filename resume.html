@@ -40,57 +40,69 @@ LinkedIn: <a
 href="https://www.linkedin.com/in/aqil-yusri/">https://www.linkedin.com/in/aqil-yusri/</a></p>
 <hr />
 <h2 id="professional-summary">PROFESSIONAL SUMMARY</h2>
-<p>Technology driven physics undergraduate with hands-on experience in
-circuit design, simulation, and hardware prototyping, including CMOS
-design (NGSpice, KLayout), embedded systems (ESP32, Arduino, Raspberry
-Pi), and PCB development (KiCad). Strong foundation in problem solving,
-technical analysis, and cross-functional teamwork, gained through device
-characterization projects, and coordinating international programmes.
-Seeking an Engineering Internship to apply technical and analytical
-skills across hardware, electronics, or system-focused roles.</p>
-<hr />
-<h2 id="education">EDUCATION</h2>
-<p><strong>UNIVERSITI SAINS MALAYSIA (USM)</strong> <span
-class="date">2023 - 2027 </span></p>
-<p>Bachelor of Science (Physics) with Honours</p>
-<ul>
-<li>CGPA: 3.69</li>
-<li>Wakalah Paynet-Yayasan Khazanah Scholarship</li>
-</ul>
-<p><strong>UNIVERSITI TEKNOLOGI MARA (UITM)</strong> <span
-class="date">2022 - 2023</span></p>
-<p>Foundation in Science</p>
-<ul>
-<li>CGPA: 3.89</li>
-</ul>
+<p>Physics undergraduate with hands-on experience across full hardware
+stack: from fabricating and characterizing optical fiber sensors, to
+designing CMOS circuits in the SkyWater Sky130 PDK, to taking Verilog
+RTL through a complete RTL-to-GDS flow with timing signoff. Skilled in
+analog and digital IC design, simulation (NGSpice, XSchem), physical
+design and layout verification (KLayout, Librelane), and functional
+verification with cocotb. Experienced in PVT corner analysis, device
+characterization, and quantitative reporting, with embedded and PCB
+prototyping background (ESP32, Raspberry Pi, KiCad). Seeking an
+Engineering Internship in IC design, semiconductor, or hardware and
+electronic roles.</p>
 <hr />
 <h2 id="projects">PROJECTS</h2>
-<p><strong>OTDR-Based D-Shaped Optical Fiber Temperature
-Sensor</strong></p>
+<p><strong>OTDR-Based D-Shaped Optical Fiber Temperature Sensor</strong>
+| <a
+href="https://github.com/AQLYSR/otdr-d-shaped-temperature-sensor">github.com/AQLYSR/otdr-d-shaped-temperature-sensor</a></p>
 <ul>
-<li>Fabricated D-shaped optical fiber probes via mechanical
-side-polishing as a structural modification for temperature
-sensing.</li>
-<li>Designed OTDR-based measurement setup with hotplate-controlled
-testing in aqueous medium.</li>
-<li>Analyzed backscattered signal attenuation for performance evaluation
-against external temperature variations.</li>
+<li>Fabricated D-shaped optical fiber temperature probes using
+controlled mechanical side-polishing, producing 5 configurations with 2,
+4, 6, 7 and 8 dB insertion loss to study the effect of polishing depth
+on sensing performance.</li>
+<li>Characterized OTDR-based point sensing performance from 40-80 °C in
+5°C increments by analyzing backscattered signal attenuation.</li>
+<li>Achieved the best overall sensing performance with 7 dB D-shaped
+probe, obtaining 0.0008 dB/°C sensitivity and R<sup>2</sup> = 0.9552 at
+5 ns pulse width.</li>
 </ul>
-<p><strong>CMOS Standard Cell Design &amp; Simulation</strong></p>
+<p><strong>CMOS Ring Oscillator Design</strong> | <a
+href="https://github.com/AQLYSR/cmos-ring-oscillator">github.com/AQLYSR/cmos-ring-oscillator</a></p>
 <ul>
-<li>Simulated CMOS inverter in NGSpice; extracted noise margins and
+<li>Designed a 5-stage CMOS ring oscillator in XSchem using SkyWater
+Sky130 (130 nm) PDK, with 1.0 µm × 0.15 µm CMOS inverter device at 1.8 V
+supply.</li>
+<li>Characterized the CMOS inverter using DC and transient simulations,
+extracting a 0.833 V switching threshold and 22.11 ps average
 propagation delay.</li>
-<li>Simulated transmission gates in NGSpice; analyzed threshold voltage
-drop and implemented level restoration.</li>
-<li>Laid out DRC-clean NAND2 and NOR2 standard cells in KLayout using
-Euler path methodology.</li>
-<li>Characterized short-channel effects (DIBL, velocity saturation)
-across 0.15 μm to 10 μm channel lengths in NGSpice.</li>
+<li>Achieved 3.99 GHz simulated oscillation frequency at the typical
+process corner, 1.8 V and 27 °C, within 12 % of the 4.52 GHz analytical
+prediction.</li>
+<li>Performed PVT sensitivity analysis across 1.6-2.0 V, -10-80 °C, and
+ss/tt/ff process corners, observing ~96%/V voltage sensitivity and a
+1.99× frequency spread between slow and fast corners.</li>
+</ul>
+<p><strong>Digital PWM Generator Design</strong> | <a
+href="https://github.com/AQLYSR/pwm-generator">github.com/AQLYSR/pwm-generator</a></p>
+<ul>
+<li>Designed a synthesizable 8-bit PWM generator in Verilog using a
+counter-comparator architecture, providing 256-step duty-cycle
+resolution (0-99.6%) with a 390.6 kHz output at 100 MHz clock.</li>
+<li>Developed cocotb functional verification with Icarus Verilog,
+validating 25% duty-cycle accuracy within ±1% and the 0% duty-cycle
+boundary case, achieving 2/2 passing tests.</li>
+<li>Implemented complete RTL-to-GDS flow using Librelane and the Sky130A
+PDK, including synthesis, floorplanning, placement, CTS, routing, and
+GDS generation.</li>
+<li>Achieved +4.95 ns worst-case setup slack and +0.108 ns hold slack
+across 9 PVT signoff corners, with 0 timing violations at the 100 MHz
+target clock.</li>
 </ul>
 <hr />
 <h2 id="experience">EXPERIENCE</h2>
-<p><strong>UNIVERSITI SAINS MALAYSIA, PENANG</strong> <span
-class="date">Feb 2025 - Mar 2025</span></p>
+<p><strong>International Office, Universiti Sains Malaysia</strong>
+<span class="date">Feb 2025 - Mar 2025</span></p>
 <p>Internship</p>
 <ul>
 <li>Competently coordinated orientation programmes for ~200 incoming
@@ -102,6 +114,21 @@ University, Japan.</li>
 international students, assisting officers with passport and visa
 documentation, photographing orientation week activities, improving
 administrative efficiency by 40%.</li>
+</ul>
+<hr />
+<h2 id="education">EDUCATION</h2>
+<p><strong>Universiti Sains Malaysia (USM)</strong> <span
+class="date">2023 - 2027 </span></p>
+<p>Bachelor of Science (Physics) with Honours</p>
+<ul>
+<li>CGPA: 3.69</li>
+<li>Wakalah Paynet-Yayasan Khazanah Scholarship</li>
+</ul>
+<p><strong>Universiti Teknologi MARA (UITM)</strong> <span
+class="date">2022 - 2023</span></p>
+<p>Foundation in Science</p>
+<ul>
+<li>CGPA: 3.89</li>
 </ul>
 <hr />
 <h2 id="certifications">CERTIFICATIONS</h2>
@@ -121,21 +148,19 @@ administrative efficiency by 40%.</li>
 </ul>
 <hr />
 <h2 id="skills">SKILLS</h2>
-<p><strong>Software &amp; Tools:</strong> NGSpice, KLayout (DRC / LVS),
-XSchem, Verilog, Librelane, SkyWater 130 nm PDK, KiCad, Soldering, OTDR,
-ESP32, Arduino, Raspberry Pi, Python, C++, Git, Linux, Docker</p>
-<p><strong>Technical Skills:</strong> Material Planning, Semiconductor
-Devices &amp; Microelectronics, Monte Carlo / Corner Analysis, Circuit
-Design &amp; Analysis, PCB Design &amp; Prototyping, Circuit Testing
-&amp; Troubleshooting, Document Management, Event Management, Technical
-Reporting &amp; Documentation</p>
+<p><strong>Software &amp; Tools:</strong> XSchem, NGSpice, Sky130 PDK,
+Verilog, Icarus Verilog, Librelane, KLayout, KiCad, ESP32, Raspberry Pi,
+OTDR, Python, C++, Git, Linux, Docker</p>
+<p><strong>Technical Skills:</strong> CMOS circuit design, DC/transient
+analysis, PVT corner analysis, static timing analysis, floorplanning,
+soldering, circuit testing &amp; troubleshooting, device
+characterization, technical reporting &amp; documentation</p>
 <hr />
 <h2 id="languages">LANGUAGES</h2>
 <ul>
 <li><strong>Malay:</strong> Native Proficiency</li>
 <li><strong>English:</strong> Full Professional Proficiency</li>
 <li><strong>Japanese:</strong> Limited Proficiency (JLPT N3)</li>
-<li><strong>Mandarin:</strong> Beginner</li>
 </ul>
 </body>
 </html>
