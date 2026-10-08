@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 set -e
+
+# ---- Resume ----------------------------------------------------------------
 SRC=resume.md
 OUT=resume
 
@@ -19,3 +21,9 @@ pandoc .build.md -f markdown+raw_html -s --css=resume.css \
   --metadata pagetitle="Aqil Yusri - Resume" -o "$OUT.html"
 weasyprint "$OUT.html" "$OUT.pdf" 2>/dev/null
 echo "Built $OUT.pdf at $(date +%T)"
+
+# ---- Cover Letter ----------------------------------------------------------
+pandoc cover-letter.md -f markdown+raw_html -s --css=cover-letter.css \
+  --metadata pagetitle="Aqil Yusri - Cover Letter" -o cover-letter.html
+weasyprint cover-letter.html cover-letter.pdf 2>/dev/null
+echo "Built cover-letter.pdf at $(date +%T)"
